@@ -27,23 +27,35 @@ const onloadAnimation = {
 
     clickCurtainBtn: function () {
 
-        let curtBtn = document.querySelector( '#curtainsBtn' );
+        // cibler les curtains ( rideaux)
+        const curtainOne=document.querySelector('.curtain-1')
+        const curtainTwo=document.querySelector('.curtain-2')
 
-        curtBtn.addEventListener( 'click', onloadAnimation.handleCurtBtnClick );
+        let curtBtn = document.querySelector( '#curtainsBtn' );
+        if ( !localStorage.getItem( "hasVisited" ) ) {
+            curtBtn.addEventListener( 'click', onloadAnimation.handleCurtBtnClick );
+        } else {
+            // on fait disparaitre les rideaux
+            curtainOne.style.display = "none";
+            curtainTwo.style.display = "none";
+
+            //on fait disparaitre le bouton
+            document.querySelector( '#curtainsBtn' ).style.display = "none";
+
+            // on remet l'effet de scroll en retirant cette class
+            onloadAnimation.body.classList.remove( 'stop-scrolling' );
+        }
     },
 
     handleCurtBtnClick: function () {
 
-        // creer une balise style
-        let styleElem = document.createElement( 'style' );
-
-        // on l'ajoute au body
-        document.body.prepend( styleElem );
-
-        // on change indirectement le style des before/after pour ouvrir les rideaux
-        styleElem.append( ".body:after{animation: onloadanimationafter 4s  forwards ;}" );
-        styleElem.append( ".body:before{animation: onloadanimationbefore 4s  forwards ;}" );
-        styleElem.append( "#curtainsBtn{cursor:pointer; transition:2sec}" );
+        // cibler les curtains ( rideaux)
+        const curtainOne=document.querySelector('.curtain-1')
+        const curtainTwo=document.querySelector('.curtain-2')
+        
+        // ajouter les animations aux div "curtain-1 et 2"
+        curtainOne.classList.add('curtain-1-animation')
+        curtainTwo.classList.add('curtain-2-animation')
 
         // on remet l'effet de scroll en retirant cette class
         onloadAnimation.body.classList.remove( 'stop-scrolling' );
@@ -52,6 +64,8 @@ const onloadAnimation = {
         document.querySelector( '#curtainsBtn' ).style.opacity = "0.5";
         document.querySelector( '#curtainsBtn' ).style.display = "none";
 
+        // le prospect a visité le site
+        localStorage.setItem("hasVisited","1")
         
     }
 }

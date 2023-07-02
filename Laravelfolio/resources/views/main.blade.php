@@ -29,10 +29,11 @@
             <p class="mx-2">Créons des expériences web exceptionnelles avec<br> notre passion pour le développement !</p>
             <div class=>
                 <div class="">
-                    <p class="m-2"><span class="text-warning">Niveau d'études</span> : Bac +3</p>
-                    <p class="m-2"><span class="text-warning">Âge :</span> 32 ans</p>
-                    <p class="m-2 "><span class="text-warning">Langues :</span> Anglais intermédiaire</p>
-                    <p class="m-2"><span class="text-warning">Soft skills :</span> Travail d'équipe, curieux, rigoureux</p>
+                    <p class="m-2"><span class="infos">Niveau d'études</span> : Bac +3</p>
+                    <p class="m-2"><span class="infos">Âge :</span> 32 ans</p>
+                    <p class="m-2 "><span class="infos">Langues :</span> Anglais intermédiaire</p>
+                    <p class="m-2"><span class="infos">Soft skills :</span> Travail d'équipe, curieux, rigoureux</p>
+                    <p><a class="cv-link px-2" href="{{ URL::to('/img/JeanMarie_Lator.pdf') }}" download>CV</a></p>
                 </div>
             </div>
         </div>

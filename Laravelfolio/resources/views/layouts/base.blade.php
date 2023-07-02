@@ -19,14 +19,17 @@
     <script  type="module" src="{{ URL::to('/js/threeAnimation.js') }}"></script>
     <script defer type="module" src="{{ URL::to('/js/webAnimation.js') }}"></script>
     <script defer type="module" src="{{ URL::to('/js/onLoadAnimation.js') }}"></script>
+    <script defer type="module" src="{{ URL::to('/js/lightMode.js') }}"></script>
     <title>@yield('titre')</title>
 </head>
 <body class="body">
+    <div class="curtain-1"></div>
+    <div class="curtain-2"></div>
     <header class="header">
         <nav class="navbar navbar-expand-lg nav-background">
             <div class="little-square"></div>
             <div class="container-fluid nav-item">
-            <a class="navbar-brand mx-5 link-light " href="#">Bescore</a>
+            <span class="navbar-brand mx-5 link-light px-2" id="light-mode" >Bescore <i class="fa-regular fa-moon"></i></span>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon text-light"></span>
             </button>

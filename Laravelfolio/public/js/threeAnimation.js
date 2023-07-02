@@ -41,12 +41,11 @@ camera.position.set( 1, 1, 1 )
 //ajout da la lumière a la scene
 scene.add( light )
 
-
 const objetImported = await loader.loadAsync( '/models/pc.glb' );
 scene.add( objetImported.scene );
 
-//bg color
-scene.background = new THREE.Color( '#E7A631' );
+//bg color // en paramettre ->recuperer le couleur de l'encart en haut à gauche de l'ecran
+scene.background = new THREE.Color( getComputedStyle(document.querySelector('.little-square')).backgroundColor );
 
 
 // Création d'un cube
