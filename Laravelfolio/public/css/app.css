@@ -5,6 +5,7 @@
     --tertiary-project-color: #ffffff;
     --background-text-color: #2d3135;
     font-size: 1.1rem;
+    
 }
 
 /* debugg */
@@ -114,7 +115,25 @@
     height: 92.3vh;
 }
 
+#myCanvasContainer{
+    position: relative;
+}
+
 #myCanvasContainer:hover{
+    cursor: pointer;
+}
+
+#changeBtn{
+    width: 10%;
+    height: 10%;
+    z-index:1;
+    background: red;
+    position: absolute;
+    bottom:10px;
+    left: 10px;
+}
+
+#changeBtn:hover{
     cursor: pointer;
 }
 
@@ -318,8 +337,6 @@ figure img{
     
 }
 
-
-
 label{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -327,8 +344,19 @@ label{
 
 input,textarea{
     background-color: var(--secondary-project-color);
-    outline: 1px var(--primary-project-color) solid;
+    outline: 0.2px var(--primary-project-color) solid;
+    border: none;
     color: white;
+}
+
+textarea[name=message]{
+    resize: none;
+}
+
+#nom,#email{
+    outline: none;
+    border: none;
+    border-bottom: var(--primary-project-color) 2px solid;
 }
 
 
@@ -337,7 +365,7 @@ input,textarea{
 
 .opacityOff{
     opacity: 0;
-    transition: 1s;
+    transition: all 1s ease;
 }
 
 .opacityOn{
@@ -346,7 +374,7 @@ input,textarea{
 
 .transformScaleOff{
     transform: scaleX(0);
-    transition: 4s;
+    transition:all 4s ease;
 }
 
 .transformScaleOn{
@@ -428,6 +456,10 @@ input,textarea{
 /*footer*/
 
 .footer{
+    background-color: var(--secondary-project-color);
+}
+
+.footer-container{
     background-color: var(--secondary-project-color);
 }
 

@@ -56,7 +56,7 @@
     <footer class="bg-dark text-center text-white mt-4 footer">
         <!-- Footer -->
     <!-- Grid container -->
-    <div class="container p-4">
+    <div class="container p-4 footer_color">
         <!-- Section: Social media -->
         <section class="mb-4">
           <!-- Facebook -->
@@ -90,12 +90,6 @@
           ></a>
         </section>
         <!-- Section: Social media -->
-    
-        <!-- Section: Form -->
-        <section class="">
-          <form action="">
-          </form>
-        </section>
         <section class="mb-4">
           <p>
             << Pour être à jour il faut se mettre à l'apache >>
