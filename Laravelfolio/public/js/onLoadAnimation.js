@@ -13,8 +13,6 @@ const onloadAnimation = {
         // activer l'effet du click sur le bouton open
         onloadAnimation.clickCurtainBtn()
 
-        // faire un  scroll top pour eviter les bugs
-        window.scrollTo({top: 0});
     },
 
     createCyrtainBtn: function () {
@@ -33,6 +31,9 @@ const onloadAnimation = {
 
         let curtBtn = document.querySelector( '#curtainsBtn' );
         if ( !localStorage.getItem( "hasVisited" ) ) {
+            // faire un  scroll top pour eviter les bugs
+            window.scrollTo( { top: 0 } );
+            
             curtBtn.addEventListener( 'click', onloadAnimation.handleCurtBtnClick );
         } else {
             // on fait disparaitre les rideaux

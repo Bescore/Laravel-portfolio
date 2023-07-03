@@ -22,7 +22,7 @@
 <section class="section section-2" id="about">
     <h2 class="background-title">A propos</h2>
     <div class="row">
-        <div class="col section-2-left-side ">
+        <div class="col col-xl-6 section-2-left-side">
             <div class="rounded-jm">
                 <img loading="lazy" src="{{ URL::to('/img/jm.png') }}" alt="jean-marie">
             </div>
@@ -34,10 +34,11 @@
                     <p class="m-2 "><span class="infos">Langues :</span> Anglais intermédiaire</p>
                     <p class="m-2"><span class="infos">Soft skills :</span> Travail d'équipe, curieux, rigoureux</p>
                     <p><a class="cv-link px-2" href="{{ URL::to('/img/JeanMarie_Lator.pdf') }}" download>CV</a></p>
+                    <i class=" px-2 fa-solid fa-hand-pointer fa-bounce"></i>
                 </div>
             </div>
         </div>
-        <div class="col section-2-right-side text-center">
+        <div class="col-12 col-xl-6 section-2-right-side text-center">
             <p class="p-5">Je suis un développeur web passionné avec une appétence pour le  back-end, prêt à relever tous les défis pour créer des expériences numériques performantes et robustes.</p>
             <h2>Compétences</h2>
             <div class="dev-skills-container">
@@ -60,14 +61,18 @@
     <div class="carousel-parent">
         <div class="arrow right-arrow"><img loading="lazy" src="{{ URL::to('/img/arrow.svg') }}"></div>
         <div class="arrow left-arrow"><img loading="lazy" src="{{ URL::to('/img/arrow.svg') }}"></div>
-        <figure class="carousel-child">
-            <img loading="lazy" src="{{ URL::to('/img/jm.png') }}" alt="image">
-            <figcaption>description</figcaption>
-        </figure>
-        <figure class="carousel-child">
-            <img loading="lazy" src="{{ URL::to('/img/jm.png') }}" alt="image">
-            <figcaption>description</figcaption>
-        </figure>
+        <a href="{{ URL::to('/projects') }}" >
+            <figure class="carousel-child">
+                <img loading="lazy" src="{{ URL::to('/img/jm.png') }}" alt="image">
+                <figcaption>description</figcaption>
+            </figure>
+        </a>
+        <a href="{{ URL::to('/projects') }}" >
+            <figure class="carousel-child">
+                <img loading="lazy" src="{{ URL::to('/img/jm.png') }}" alt="image">
+                <figcaption>description</figcaption>
+            </figure>
+        </a>
         <figure class="carousel-child">
             <img loading="lazy" src="{{ URL::to('/img/jm.png') }}" alt="image">
             <figcaption>description</figcaption>

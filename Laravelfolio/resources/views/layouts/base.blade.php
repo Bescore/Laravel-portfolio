@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -20,6 +20,8 @@
     <script defer type="module" src="{{ URL::to('/js/webAnimation.js') }}"></script>
     <script defer type="module" src="{{ URL::to('/js/onLoadAnimation.js') }}"></script>
     <script defer type="module" src="{{ URL::to('/js/lightMode.js') }}"></script>
+    <!-- counterAPI library, insert anywhere on the page. -->
+    <script defer src="https://counterapi.com/c.js" async ></script>
     <title>@yield('titre')</title>
 </head>
 <body class="body">
@@ -62,33 +64,20 @@
     <div class="container p-4 footer_color">
         <!-- Section: Social media -->
         <section class="mb-4">
-          <!-- Facebook -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-facebook-f"></i
-          ></a>
-    
           <!-- Twitter -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          <a class="btn btn-outline-light btn-floating m-1" href="https://twitter.com/jeanmarielator" role="button"
             ><i class="fab fa-twitter"></i
           ></a>
-    
-          <!-- Google -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-google"></i
-          ></a>
-    
-          <!-- Instagram -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
-            ><i class="fab fa-instagram"></i
-          ></a>
-    
+
           <!-- Linkedin -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          <a class="btn btn-outline-light btn-floating m-1" href="www.linkedin.com/in/jean-marie-lator
+
+          " role="button"
             ><i class="fab fa-linkedin-in"></i
           ></a>
     
           <!-- Github -->
-          <a class="btn btn-outline-light btn-floating m-1" href="#!" role="button"
+          <a class="btn btn-outline-light btn-floating m-1" href="https://github.com/Bescore" role="button"
             ><i class="fab fa-github"></i
           ></a>
         </section>
@@ -97,6 +86,8 @@
           <p>
             << Pour être à jour il faut se mettre à l'apache >>
           </p>
+          <!-- Add the counter instance somewhere to your template... -->
+        <div class="counterapi my-2" label="Visiteurs" style="min-height:44px" nolink=true bg="transparent" iconColor="#e7a631" ></div>
         </section>
         <!-- Section: Text -->
     
@@ -116,7 +107,7 @@
       <!-- Grid container -->
     
       <!-- Copyright -->
-      <div class="text-center p-3 footer">
+      <div class="text-center p-3 footer footer_bottom">
         © 2023 Copyright:
         <p style="display: inline" class="text-white" >jean-marie Lator - Laravel Project</p>
       </div>

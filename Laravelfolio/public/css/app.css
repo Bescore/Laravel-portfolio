@@ -112,13 +112,13 @@
     margin: 0 !important;
 }
 .section {
-    height: 93vh;
+    height: 93%;
     /* border: 1px solid white; */
 }
 
 .left-side {
     position: relative;
-    height: 92.3vh;
+    height: 100vh;
 }
 
 #myCanvasContainer{
@@ -211,6 +211,7 @@
 .section-2 {
     position: relative;
     margin-top: 40px;
+    width: 99.3%;
 }
 
 .infos{
@@ -322,16 +323,28 @@
     
 .arrow{
     position: absolute;
-    z-index:2;
+    z-index:100;
+}
+
+.arrow img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
 }
 
 .right-arrow{
     right: 0;
-    transform: rotate(180deg);
+    transform: rotate(180deg)!important;
 }
+
 
 .left-arrow{
     left: 0;
+}
+
+.section-3 a {
+    max-width: 300px;
+    text-decoration: none;
+    color: #ffffff;
 }
 
 figure{
@@ -499,10 +512,15 @@ textarea[name=message]{
 
 .footer{
     background-color: var(--secondary-project-color);
+    
 }
 
 .footer-container{
     background-color: var(--secondary-project-color);
+}
+
+.footer_bottom{
+    border-top: solid var(--primary-project-color) 1px;
 }
 
 /*no scroll*/
@@ -605,7 +623,7 @@ textarea[name=message]{
     }
 
     .section-2{
-    display: none;
+    display: block;
     }
 
     .section-3{
@@ -630,6 +648,11 @@ textarea[name=message]{
         position: absolute;
         z-index:2;
         
+    }
+
+    .arrow img:hover{
+        transform: scale(1.2) !important;
+        cursor: pointer;
     }
     
     .right-arrow{
@@ -691,4 +714,38 @@ textarea[name=message]{
 "data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(231, 166, 49, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E") !important;
     }
 
+}
+
+/*page  projet*/
+
+.section-projet{
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    margin-top: 3%;
+    padding: 5%;
+}
+
+.section-projet img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.section-rss{
+    position: relative;
+    height: 40%;
+    padding: 5.8%;
+}
+
+.section-rss img{
+    width: 100%;
+    height: 380px;
+    object-fit: cover;
+    padding: 5%;
+}
+
+.section-rss a{
+    text-decoration: none;
+    color: var(--primary-project-color);
 }

@@ -56,6 +56,7 @@ const theme = {
         theme.setOfColor( '--background-text-color', '#ffffff' );
 
         document.querySelector( '.body' ).style.color = "#ffffff"
+        
     },
 
     setOfColor: function ( nameofcolor, thecolor ) {
