@@ -8,10 +8,11 @@ use Illuminate\Http\Request;
 
 class ProjectController extends Controller
 {
-    public function projects(){
+    public function show($id){
 
         setlocale(LC_TIME, 'fr_FR');
-        // $projects=Project::all();
+        $project=Project::findOrfail($id);
+        dump($project);
 
         $url = 'https://rmc.bfmtv.com/rss/actualites/'; 
 
@@ -21,11 +22,14 @@ class ProjectController extends Controller
         // recupérer le tableau d'items
         $rss= $rss->channel->item;
 
-        $timestamp=strtotime($rss[0]->pubDate);
+        //nombre aleatoire
+        $randomNumber=rand(0,count($rss));
+
+        $timestamp=strtotime($rss[$randomNumber]->pubDate);
         
         // formater la date ' l'heure
         $localDateTime = date('d - m - Y  à  H : i : s', $timestamp);
 
-        return view('projects', ['rss'=>$rss, 'date'=>$localDateTime]);
+        return view('projects', ['rss'=>$rss, 'date'=>$localDateTime, 'randomNumber'=>$randomNumber,'project'=>$project]);
     }
 }

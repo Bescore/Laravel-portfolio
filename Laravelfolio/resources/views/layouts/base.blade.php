@@ -16,17 +16,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
     {{-- js --}}
     <script defer type="module" src="{{ URL::to('/js/onScroll.js') }}"></script>
-    <script  type="module" src="{{ URL::to('/js/threeAnimation.js') }}"></script>
+    <script defer  type="module" src="{{ URL::to('/js/threeAnimation.js') }}"></script>
     <script defer type="module" src="{{ URL::to('/js/webAnimation.js') }}"></script>
-    <script defer type="module" src="{{ URL::to('/js/onLoadAnimation.js') }}"></script>
     <script defer type="module" src="{{ URL::to('/js/lightMode.js') }}"></script>
     <!-- counterAPI library, insert anywhere on the page. -->
     <script defer src="https://counterapi.com/c.js" async ></script>
     <title>@yield('titre')</title>
 </head>
 <body class="body">
-    <div class="curtain-1"></div>
-    <div class="curtain-2"></div>
     <header class="header">
         <nav class="navbar navbar-expand-lg nav-background">
             <div class="little-square"></div>

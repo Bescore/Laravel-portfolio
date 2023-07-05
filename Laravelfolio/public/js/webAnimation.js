@@ -14,7 +14,10 @@ const animations = {
         // creer la boucle qui rajoute la class opacityOff sur tous les element de la page
         for ( const bodychild of animations.bodychilds ) {
 
-            bodychild.classList.add( 'opacityOff' )
+            if (!bodychild.classList.contains("curtain")) {
+                bodychild.classList.add( 'opacityOff' )
+            }
+            
 
         }
 
@@ -44,7 +47,7 @@ document.addEventListener( "DOMContentLoaded", animations.init )
 const observer = new IntersectionObserver( ( entries ) => {
 
     for ( const entry of entries ) {
-        if ( entry.isIntersecting ) {
+        if ( entry.isIntersecting && !entry.target.classList.contains( 'curtain' )) {
             entry.target.classList.add( 'opacityOn' )
         } else {
             entry.target.classList.remove( 'opacityOn' )
@@ -68,5 +71,8 @@ const observer = new IntersectionObserver( ( entries ) => {
 
 // boucle qui oberserve chaque élément de la page
 for ( const element of animations.bodychilds ) {
+
+    //oberser tout le monde
     observer.observe( element );
+    
 }

@@ -9,7 +9,7 @@
         <div class=" col-xl-6 left-side nopadding">
             <div class="main-square back-square first-square"></div>
             <div class="main-square back-square second-square"></div>
-            <div id="myCanvasContainer" class="main-square third-square"><div id="myCanvas" style="width: 100%; height: 100%;overflow:hidden;"></div></div>
+            <div id="myCanvasContainer" class="main-square third-square"><div class="curtain"></div><div id="myCanvas" style="width: 100%; height: 100%;overflow:hidden;"></div></div>
         </div>
         <div class=" col-xl-6 right-side nopadding">
             <h1 class="my-text firstname">Jean-Marie Lator</h1>
@@ -58,26 +58,15 @@
 </section>
 <section class=" section section-3" id="projects">
     <h2 class="background-title">Projets</h2>
-    <div class="carousel-parent">
-        <div class="arrow right-arrow"><img loading="lazy" src="{{ URL::to('/img/arrow.svg') }}"></div>
-        <div class="arrow left-arrow"><img loading="lazy" src="{{ URL::to('/img/arrow.svg') }}"></div>
-        <a href="{{ URL::to('/projects') }}" >
-            <figure class="carousel-child">
-                <img loading="lazy" src="{{ URL::to('/img/jm.png') }}" alt="image">
-                <figcaption>description</figcaption>
+    <div class="row h-100 mx-auto d-flex justify-content-center align-items-center">
+        @foreach ($projects as $item)
+        <a class='col-12 col-xl-6 m-2 carte' href="{{ route('projects', ['id' =>  $item->id]) }}" >
+            <figure class="m-2 d-flex justify-content-center align-items-center ">
+                
+                <figcaption>{{$item->titre}}</figcaption>
             </figure>
         </a>
-        <a href="{{ URL::to('/projects') }}" >
-            <figure class="carousel-child">
-                <img loading="lazy" src="{{ URL::to('/img/jm.png') }}" alt="image">
-                <figcaption>description</figcaption>
-            </figure>
-        </a>
-        <figure class="carousel-child">
-            <img loading="lazy" src="{{ URL::to('/img/jm.png') }}" alt="image">
-            <figcaption>description</figcaption>
-        </figure>
-        
+        @endforeach
     </div>
 </section>
 <br><br>

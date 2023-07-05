@@ -19,5 +19,5 @@ use Illuminate\Support\Facades\Route;
 //     return view('main');
 // });
 
-Route::get('/',  [MainController::class,'main']);
-Route::get('/projects',  [ProjectController::class,'projects']);
+Route::get('/',  [MainController::class,'main'])->name('main');
+Route::get('/projects/{id}',  [ProjectController::class,'show'])->name('projects');

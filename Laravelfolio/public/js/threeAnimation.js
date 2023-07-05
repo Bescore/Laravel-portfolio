@@ -2,6 +2,16 @@ import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.m
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.117.1/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/GLTFLoader.js';
 
+//
+const tapHereBtn = document.querySelector( '.curtain' );
+
+tapHereBtn.addEventListener('click',handleTapeHereClick)
+
+function handleTapeHereClick() {
+  tapHereBtn.classList.add( 'opacityOff' );
+  tapHereBtn.style.display="none"
+}
+
 //ciblage des divs nécessaires
 const myCanvas = document.querySelector( '#myCanvas' );
 const myCanvasContainer = document.querySelector( '#myCanvasContainer' );
