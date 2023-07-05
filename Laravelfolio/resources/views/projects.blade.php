@@ -4,7 +4,7 @@
 
 @section('main')
 <section class="section section-projet my-5">
-    <h2 class="background-title" id="project-show">Titre projet</h2>
+    <h2 class="background-title" id="project-show">{{$project->titre}}</h2>
     <div class="row">
         <div class="col-12 col-xl-6">
             <img class=" col " src="{{ URL::to('/img/campfire.jpg') }}" alt="">
@@ -14,15 +14,12 @@
         </div>
         <div class="col-12 col-xl-6">
             <iframe width="100%" height="420px" src="https://www.youtube.com/embed/W-7MSuu1qtM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-            <p class="py-3 text-center">Technologies utilisés</p>
-            <div class="d-flex justify-content-center">
-                <ul class="py-3" style="list-style: none">
-                    <li>Lorem, ipsum.</li>
-                    <li>Lorem, ipsum dolor.</li>
-                    <li> Lorem, ipsum.</li>
-                    <li> Lorem, ipsum.</li>
-                    <li> Lorem, ipsum.</li>
-                </ul>
+            <p class="py-3 text-center">Technologies utilisées</p>
+            <div class="row">
+                @foreach ($project->technologies as $item)
+                <div style="background-color: #{{$item->couleur}};" class="text-center col rounded-2 p-2 m-2 tag">{{$item->titre}}</div>
+                @endforeach
+                
             </div>
         </div>
     </div>

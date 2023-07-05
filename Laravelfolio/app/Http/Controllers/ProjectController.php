@@ -12,7 +12,7 @@ class ProjectController extends Controller
 
         setlocale(LC_TIME, 'fr_FR');
         $project=Project::findOrfail($id);
-        dump($project);
+        //dump($project->technologies);
 
         $url = 'https://rmc.bfmtv.com/rss/actualites/'; 
 
