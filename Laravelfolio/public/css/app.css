@@ -317,25 +317,6 @@
     flex-wrap: wrap;
 }
 
-.arrow {
-    position: absolute;
-    z-index: 100;
-}
-
-.arrow img:hover {
-    transform: scale(1.2);
-    cursor: pointer;
-}
-
-.right-arrow {
-    right: 0;
-    transform: rotate(180deg) !important;
-}
-
-.left-arrow {
-    left: 0;
-}
-
 .section-3 a {
     max-width: 300px;
     text-decoration: none;
@@ -348,7 +329,7 @@ figure {
     transition: 1s;
 }
 
-figure:hover {
+.section-3 a:hover {
     background-color: var(--primary-project-color);
     transform: scale(1.05) !important;
 }
