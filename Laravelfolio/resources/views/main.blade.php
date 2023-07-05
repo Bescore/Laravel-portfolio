@@ -85,6 +85,5 @@
             <button type="button" class="btn btn-light">Envoyer</button>
         </form>
     </div>
-
 </section>
 @endsection

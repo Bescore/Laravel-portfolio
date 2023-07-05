@@ -37,16 +37,16 @@
             <div class="collapse navbar-collapse " id="navbarNav">
                 <ul class="navbar-nav mx-5">
                     <li class="nav-item">
-                        <a class="nav-link active link-light" aria-current="page" href="{{ URL::to('/#') }}">Accueil</a>
+                        <a class="nav-link active link-light" aria-current="page" id="accueil" href="{{ URL::to('/#home') }}">Accueil</a>
                     </li>
                     <li class="nav-item px-4 ">
-                        <a class="nav-link link-light a-propos" href="{{ URL::to('/#about') }}">A propos</a>
+                        <a class="nav-link link-light a-propos " id="a_propos" href="{{ URL::to('/#about') }}">A propos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-light" href="{{ URL::to('/#projects') }}">Projets</a>
+                        <a class="nav-link link-light " id="projets" href="{{ URL::to('/#projects') }}">Projets</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-light" href="{{ URL::to('/#contact') }}">Contact</a>
+                        <a class="nav-link link-light " id="contact_me" href="{{ URL::to('/#contact') }}">Contact</a>
                     </li>
                 </ul>
             </div>

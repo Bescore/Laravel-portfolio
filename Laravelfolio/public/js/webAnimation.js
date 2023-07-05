@@ -36,8 +36,8 @@ const animations = {
             }, 2000 );
 
         }
-    }
-
+    },
+    
 }
 
 document.addEventListener( "DOMContentLoaded", animations.init )
@@ -64,7 +64,6 @@ const observer = new IntersectionObserver( ( entries ) => {
         } else {
             entry.target.classList.remove( 'myAnim' )
         }
-        
     }
 });
 
