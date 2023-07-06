@@ -480,6 +480,13 @@ textarea[name="message"] {
     /* *{
         display: none
     }; */
+
+    .nav-item a:before {
+        content: "";
+        position: absolute;
+        transform: scaleX(0);
+        width: 30% !important;
+    }
     
     .a-propos {
         margin: auto -30px;
