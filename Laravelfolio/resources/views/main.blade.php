@@ -26,9 +26,10 @@
             <div class="rounded-jm">
                 <img loading="lazy" src="{{ URL::to('/img/jm.png') }}" alt="jean-marie">
             </div>
-            <p class="mx-2">Créons des expériences web exceptionnelles avec<br> notre passion pour le développement !</p>
+            
             <div class=>
                 <div class="">
+                    <p class="mx-2"><span class="infos">Pourquoi ???</span> passion + travail = développeur web</p>
                     <p class="m-2"><span class="infos">Niveau d'études</span> : Bac +3</p>
                     <p class="m-2"><span class="infos">Âge :</span> 32 ans</p>
                     <p class="m-2 "><span class="infos">Langues :</span> Anglais intermédiaire</p>

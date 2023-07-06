@@ -34,32 +34,36 @@ const headerOnScrollEffect = {
     handleChangeElementColorScroll: function () {
         
         // ici je recupère la couleur d'un element de thème variable ( voir le code threejs je fais pareil)
-        const colorOfCurrentTheme=getComputedStyle(document.querySelector('.little-square')).backgroundColor
+        const colorOfCurrentTheme = getComputedStyle( document.querySelector( '.little-square' ) ).backgroundColor
+        
+        //ceci ne doit se produire que sur la page d'accueil, on va donc checker l'url
+        var pathArray = window.location.pathname.split( '/' );
+        
         
         console.log( window.pageYOffset )
-        if ( window.pageYOffset>0 && window.pageYOffset<937 ) {
+        if ( window.pageYOffset>0 && window.pageYOffset<937 && pathArray[1] !== "projects" ) {
             document.querySelector( "#accueil" ).classList.add( "text-warning" );
         } else {
             document.querySelector( "#accueil" ).classList.remove( "text-warning" );
         }
         
-        if (window.pageYOffset>937 && window.pageYOffset<1714) {
+        if (window.pageYOffset>937 && window.pageYOffset<1714 && pathArray[1] !== "projects") {
             document.querySelector( "#a_propos" ).classList.add( "text-warning" );
         } else {
             document.querySelector( "#a_propos" ).classList.remove( "text-warning" );
         }
         
-        if (window.pageYOffset>1714 && window.pageYOffset<2523) {
+        if (window.pageYOffset>1714 && window.pageYOffset<2523 && pathArray[1] !== "projects") {
             document.querySelector( "#projets" ).classList.add( "text-warning" );
         } else {
             document.querySelector( "#projets" ).classList.remove( "text-warning" );
         }
         
-        if (window.pageYOffset>2523) {
+        if (window.pageYOffset>2523 && pathArray[1] !== "projects") {
             document.querySelector( "#contact_me" ).classList.add( "text-warning" );
         } else {
             document.querySelector( "#contact_me" ).classList.remove( "text-warning" );
-         }
+        }
     }
 
 

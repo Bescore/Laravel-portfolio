@@ -13,12 +13,13 @@
     {{-- font --}}
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Caprasimo&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap" rel="stylesheet">
     {{-- js --}}
     <script defer type="module" src="{{ URL::to('/js/onScroll.js') }}"></script>
     <script defer  type="module" src="{{ URL::to('/js/threeAnimation.js') }}"></script>
     <script defer type="module" src="{{ URL::to('/js/webAnimation.js') }}"></script>
     <script defer type="module" src="{{ URL::to('/js/lightMode.js') }}"></script>
+    <script defer type="module" src="{{ URL::to('/js/rss.js') }}"></script>
     <!-- counterAPI library, insert anywhere on the page. -->
     <script defer src="https://counterapi.com/c.js" async ></script>
     <title>@yield('titre')</title>
@@ -81,7 +82,7 @@
         <!-- Section: Social media -->
         <section class="mb-4">
           <p>
-            << Pour être à jour il faut se mettre à l'apache >>
+             “ Pour être à jour il faut se mettre à l'apache ”
           </p>
           <!-- Add the counter instance somewhere to your template... -->
         <div class="counterapi my-2" label="Visiteurs" style="min-height:44px" nolink=true bg="transparent" iconColor="#e7a631" ></div>
@@ -105,8 +106,8 @@
     
       <!-- Copyright -->
       <div class="text-center p-3 footer footer_bottom">
-        © 2023 Copyright:
-        <p style="display: inline" class="text-white" >jean-marie Lator - Laravel Project</p>
+        © 2023 -
+        <p style="display: inline" class="text-white" >jean-marie Lator - Laravel Project - <i class="fa-solid fa-phone"></i> 06.65.65.78.80</p>
       </div>
       <!-- Copyright -->
     </footer>

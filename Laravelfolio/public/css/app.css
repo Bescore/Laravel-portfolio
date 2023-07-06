@@ -5,6 +5,7 @@
     --tertiary-project-color: #ffffff;
     --background-text-color: #2d3135;
     font-size: 1.1rem;
+    
 }
 
 /* debugg */
@@ -15,9 +16,10 @@
 .body {
     background-color: var(--secondary-project-color);
     color: var(--tertiary-project-color);
-    font-family: "Caprasimo", cursive;
+    overflow-x: hidden;
     box-sizing: border-box;
-    transition: 600ms;
+    transition: 400ms;
+    font-family: 'Geologica', sans-serif;
 }
 
 /* header part  */
@@ -296,6 +298,7 @@
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    border-radius: 20px;
 }
 
 .dev-skills-container i {
@@ -319,6 +322,7 @@
     max-width: 300px;
     text-decoration: none;
     color: #ffffff;
+    border-radius: 20px;
 }
 
 figure {
@@ -328,7 +332,8 @@ figure {
 }
 
 .section-3 a:hover {
-    border: solid 1px;
+    /* border: solid 1px; */
+    background-color: var(--background-text-color);
     border-color: var(--primary-project-color);
     transform: scale(1.05) !important;
 }
@@ -355,7 +360,7 @@ figure img {
     padding: 5%;
     margin-top: 15vh;
     position: relative;
-
+    border-radius: 20px;
     background-image: linear-gradient(
         360deg,
         var(--secondary-project-color),
@@ -475,7 +480,7 @@ textarea[name="message"] {
     /* *{
         display: none
     }; */
-
+    
     .a-propos {
         margin: auto -30px;
     }
@@ -642,6 +647,11 @@ textarea[name="message"] {
     object-fit: cover;
 }
 
+.section-projet a{
+    text-decoration: none;
+    color: var(--primary-project-color);
+}
+
 .section-rss {
     position: relative;
     height: 40%;
@@ -658,4 +668,12 @@ textarea[name="message"] {
 .section-rss a {
     text-decoration: none;
     color: var(--primary-project-color);
+}
+
+.line-height{
+    line-height: 2rem;
+}
+
+.no-videos-img{
+    object-fit: contain !important;
 }

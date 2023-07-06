@@ -2,7 +2,7 @@ import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.m
 import { OrbitControls } from 'https://cdn.jsdelivr.net/npm/three@0.117.1/examples/jsm/controls/OrbitControls.js';
 import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/jsm/loaders/GLTFLoader.js';
 
-//
+
 const tapHereBtn = document.querySelector( '.curtain' );
 
 tapHereBtn.addEventListener('click',handleTapeHereClick)
@@ -57,7 +57,6 @@ scene.add( objetImported.scene );
 //bg color // en paramettre ->recuperer le couleur de l'encart en haut à gauche de l'ecran
 scene.background = new THREE.Color( getComputedStyle(document.querySelector('.little-square')).backgroundColor );
 
-
 // Création d'un cube
 //var geometry = new THREE.BoxGeometry( 1, 1, 1 );
 //var material = new THREE.MeshBasicMaterial( { color: 0x1D2125, roughness:0 } );
@@ -70,12 +69,8 @@ camera.position.z = 0;
 camera.position.y = 0.5;
 objetImported.scene.rotation.y = 1.5
 
-
-
-
 //animation contenu dans le glb
 const mixer = new THREE.AnimationMixer( objetImported.scene );
-
 const clips = objetImported.animations;
 
 // Vous pouvez vérifier la liste des animations disponibles dans votre fichier GLB
