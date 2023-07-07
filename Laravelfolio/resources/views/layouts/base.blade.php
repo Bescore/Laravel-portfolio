@@ -68,9 +68,9 @@
           ></a>
 
           <!-- Linkedin -->
-          <a class="btn btn-outline-light btn-floating m-1" href="www.linkedin.com/in/jean-marie-lator
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/jean-marie-lator"
 
-          " role="button"
+           role="button"
             ><i class="fab fa-linkedin-in"></i
           ></a>
     
@@ -107,7 +107,7 @@
       <!-- Copyright -->
       <div class="text-center p-3 footer footer_bottom">
         © 2023 -
-        <p style="display: inline" class="text-white" >jean-marie Lator - Laravel Project - <i class="fa-solid fa-phone"></i> 06.65.65.78.80</p>
+        <p style="display: inline" class="text-white" >made with 💖 - Laravel Project - <i class="fa-solid fa-phone fa-1x"></i><pre style="display: inline"> 06.65.65.78.80 -</pre> <i class="fa-solid fa-envelope fa-1x" style="color: #ffffff;"></i><pre style="display: inline"> jean.marie.lator@gmail.com</pre></p>
       </div>
       <!-- Copyright -->
     </footer>

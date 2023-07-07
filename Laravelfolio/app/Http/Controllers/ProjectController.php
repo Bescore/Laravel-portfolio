@@ -14,7 +14,7 @@ class ProjectController extends Controller
         $project=Project::findOrfail($id);
         //dump($project->technologies);
 
-        $url = 'https://rmc.bfmtv.com/rss/actualites/'; 
+        $url = 'https://www.jeuxvideo.com/rss/rss.xml'; 
 
         // envoyer le flux
         $rss = simplexml_load_file($url);

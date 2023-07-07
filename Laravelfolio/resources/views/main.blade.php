@@ -43,15 +43,15 @@
             <p class="p-5">Je suis un développeur web passionné avec une appétence pour le  back-end, prêt à relever tous les défis pour créer des expériences numériques performantes et robustes.</p>
             <h2>Compétences</h2>
             <div class="dev-skills-container">
-                <i class="fa-brands fa-php fa-4x" style="color:purple" title="PHP" ></i>
-                <i class="fa-brands fa-java fa-4x" style="color:orange" title="Java"> </i>
-                <i class="fa-brands fa-js fa-4x" style="color:yellow" title="Javascript"></i>
-                <i class="fa-brands fa-symfony fa-4x" style="color:black" title="symfony"></i>
-                <i class="fa-brands fa-laravel fa-4x" style="color:red" title="Laravel"></i>
-                <i class="fa-brands fa-html5 fa-4x" style="color:orange" title="html"></i>
-                <i class="fa-brands fa-css3-alt fa-4x" style="color:rgb(26, 23, 199)" title="css"></i>
-                <i class="fa-brands fa-vuejs fa-4x" style="color:green" title="vue.js"></i>
-                <i class="fa-brands fa-wordpress fa-4x" title="wordpress"></i>
+                <i class="fa-brands fa-php fa-3x" style="color:purple" title="PHP" ></i>
+                <i class="fa-brands fa-java fa-3x" style="color:orange" title="Java"> </i>
+                <i class="fa-brands fa-js fa-3x" style="color:yellow" title="Javascript"></i>
+                <i class="fa-brands fa-symfony fa-3x" style="color:black" title="symfony"></i>
+                <i class="fa-brands fa-laravel fa-3x" style="color:red" title="Laravel"></i>
+                <i class="fa-brands fa-html5 fa-3x" style="color:orange" title="html"></i>
+                <i class="fa-brands fa-css3-alt fa-3x" style="color:rgb(26, 23, 199)" title="css"></i>
+                <i class="fa-brands fa-vuejs fa-3x" style="color:green" title="vue.js"></i>
+                <i class="fa-brands fa-wordpress fa-3x" title="wordpress"></i>
             </div>
         </div>
         
@@ -77,7 +77,7 @@
     <h2 class="background-title contact-title">Contact</h2>
     <div class="contact-container">
         <form id="form" method="POST" class="">
-            <label for="nom">Nom/Prenom</label><br>
+            <label for="nom">Nom</label><br>
             <input type="text" id="nom"  name="nom" ><br>
             <label for="email">Email</label><br>
             <input type="text" id="email" name="email" ><br>

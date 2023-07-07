@@ -5,7 +5,6 @@
     --tertiary-project-color: #ffffff;
     --background-text-color: #2d3135;
     font-size: 1.1rem;
-    
 }
 
 /* debugg */
@@ -19,7 +18,7 @@
     overflow-x: hidden;
     box-sizing: border-box;
     transition: 400ms;
-    font-family: 'Geologica', sans-serif;
+    font-family: "Geologica", sans-serif;
 }
 
 /* header part  */
@@ -333,7 +332,7 @@ figure {
 }
 
 .section-3 a:hover {
-     border: solid 1px; 
+    border: solid 1px;
     /* background-color: var(--background-text-color); */
     border-color: var(--primary-project-color);
     transform: scale(1.05) !important;
@@ -386,12 +385,6 @@ textarea {
 
 textarea[name="message"] {
     resize: none;
-}
-
-#nom,
-#email {
-    
-    border-bottom: var(--primary-project-color) 2px solid;
 }
 
 /*animations*/
@@ -488,7 +481,7 @@ textarea[name="message"] {
         transform: scaleX(0);
         width: 30% !important;
     }
-    
+
     .a-propos {
         margin: auto -30px;
     }
@@ -526,7 +519,6 @@ textarea[name="message"] {
         transform: translate(-50%, -50%);
         font-size: 1.17rem;
         text-align: center;
-        
     }
 
     .firstname {
@@ -574,9 +566,8 @@ textarea[name="message"] {
     .section-3 {
         position: relative;
         height: 85vh;
-        
     }
-    
+
     .background-title {
         position: absolute;
         top: 0vh;
@@ -657,7 +648,7 @@ textarea[name="message"] {
     object-fit: cover;
 }
 
-.section-projet a{
+.section-projet a {
     text-decoration: none;
     color: var(--primary-project-color);
 }
@@ -680,10 +671,10 @@ textarea[name="message"] {
     color: var(--primary-project-color);
 }
 
-.line-height{
+.line-height {
     line-height: 2rem;
 }
 
-.no-videos-img{
+.no-videos-img {
     object-fit: contain !important;
 }

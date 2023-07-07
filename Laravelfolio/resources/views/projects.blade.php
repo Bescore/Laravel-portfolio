@@ -40,7 +40,7 @@
             <img style="object-fit:contain"  src="{{$rss[$randomNumber]->enclosure->attributes()->url}}" alt="{{$rss[$randomNumber]->title}}">
         </div>
             <div class="col-12 col-xl-6 text-center">
-                <p class="h2">Breaking News </p>
+                <p class="h2">News</p>
                 <div class="py-3" style="list-style: none">
                         <p><span>Publié le : </span> {{$date}}<p>
                         <p>{{$rss[$randomNumber]->title}}<p>

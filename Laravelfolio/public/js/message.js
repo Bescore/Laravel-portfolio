@@ -1,6 +1,8 @@
 const message = {
     
     form: document.querySelector( '#form' ),
+    soundWin: new Audio( './autre/yeahoo.mp3' ),
+    soundLoose : new Audio( './autre/failed.mp3' ),
 
     init: function () {
         message.form.addEventListener( 'submit', message.handleFormSubmit );
@@ -41,32 +43,30 @@ const message = {
             
             } );
             
-            var soundWin = new Audio( './autre/yeahoo.mp3' );
-            soundWin.volume = 0.04;
+            message.soundWin.volume = 0.04;
             // jouer le son
-            soundWin.play();
+            message.soundWin.play();
 
-           
             setTimeout(function() {
                 alert( "Message envoyé ! 💌" );
-            }, 500);
+            }, 450);
         } else {
 
-            var soundLoose = new Audio( './autre/failed.mp3' );
-            soundLoose.volume = 0.04;
+            
+            message.soundLoose.volume = 0.04;
             // jouer le son
-            soundLoose.play();
+            message.soundLoose.play();
 
             setTimeout(function() {
-                alert( "echec d'envoi, veuillez inscrire une adresse email, un nom et un message valide" );
-            }, 500);
+                alert( "Echec d'envoi ⛔, veuillez inscrire une adresse email, un nom et un message valide" );
+            }, 450);
         }
         
     },
 
     checkEntries: function ( nom, email, message ) {
         
-        // on vérifie les entrés (regex made in chat gpt)
+        // on vérifie les entrées (regex made in chat gpt)
         const regexEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
         const regexNom = /^[a-zA-Z0-9\s]+$/;
         const regexMessage = /^[a-zA-Z0-9\s.,:'ÀÁÂÃÄÅàáâãäåÈÉÊËèéêëÎÏîïÔÕÖÙÚÛÜùúûüÿÇçŒœÆæØøœ]+$/u;
