@@ -55,7 +55,10 @@ const theme = {
         theme.setOfColor( '--primary-project-color', '#815E91' );
         theme.setOfColor( '--background-text-color', '#ffffff' );
 
-        document.querySelector( '.body' ).style.color = "#ffffff"
+        document.querySelector( '.body' ).style.color = "#ffffff";
+        document.querySelector( '#nom' ).style.backgroundColor = "#2d3135";
+        document.querySelector( '#email' ).style.backgroundColor = "#2d3135";
+        document.querySelector( '#message' ).style.backgroundColor = "#2d3135";
         
     },
 

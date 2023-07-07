@@ -40,7 +40,6 @@ const headerOnScrollEffect = {
         var pathArray = window.location.pathname.split( '/' );
         
         
-        console.log( window.pageYOffset )
         if ( window.pageYOffset>0 && window.pageYOffset<937 && pathArray[1] !== "projects" ) {
             document.querySelector( "#accueil" ).classList.add( "text-warning" );
         } else {

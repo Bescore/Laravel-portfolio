@@ -19,5 +19,10 @@ use Illuminate\Support\Facades\Route;
 //     return view('main');
 // });
 
+// page principale
 Route::get('/',  [MainController::class,'main'])->name('main');
+
+// page projet
 Route::get('/projects/{id}',  [ProjectController::class,'show'])->name('projects');
+
+

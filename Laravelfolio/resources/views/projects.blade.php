@@ -12,7 +12,7 @@
             @if (!empty($project->lien_demo))
             <a style="display: block" href="{{$project->lien_demo}}" target="_blank" class="my-4"><i class="fa-solid fa-link"></i> Essayez vous-même</a>
             @else
-            <p>🏝️💻🏝️</p>
+            <p>👇</p>
             @endif
             <a class="my-4" href="{{$project->github}}" target="_blank"> <i class="fa-brands fa-square-github"></i> Le projet sur Github ici</a>
         </div>

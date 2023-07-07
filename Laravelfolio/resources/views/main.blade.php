@@ -59,7 +59,7 @@
 </section>
 <section class=" section section-3" id="projects">
     <h2 class="background-title">Projets</h2>
-    <div class="row h-100 mx-auto d-flex justify-content-center align-items-center">
+    <div class="row h-100 mx-auto d-flex justify-content-center align-items-center card-b">
         @foreach ($projects as $item)
         <a class='col-12 col-xl-6 m-2 carte' href="{{ route('projects', ['id' =>  $item->id]) }}" >
             <figure class="m-2 d-flex justify-content-center align-items-center ">
@@ -76,14 +76,14 @@
     <div class="mask"></div>
     <h2 class="background-title contact-title">Contact</h2>
     <div class="contact-container">
-        <form method="POST" class="">
+        <form id="form" method="POST" class="">
             <label for="nom">Nom/Prenom</label><br>
             <input type="text" id="nom"  name="nom" ><br>
             <label for="email">Email</label><br>
             <input type="text" id="email" name="email" ><br>
             <label for="message">Message</label><br>
             <textarea name="message" id="message" cols="20" rows="10"></textarea><br><br>
-            <button type="button" class="btn btn-light">Envoyer</button>
+            <button class="btn btn-light">Envoyer</button>
         </form>
     </div>
 </section>

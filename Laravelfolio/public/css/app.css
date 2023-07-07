@@ -323,6 +323,7 @@
     text-decoration: none;
     color: #ffffff;
     border-radius: 20px;
+    align-self: center;
 }
 
 figure {
@@ -332,8 +333,8 @@ figure {
 }
 
 .section-3 a:hover {
-    /* border: solid 1px; */
-    background-color: var(--background-text-color);
+     border: solid 1px; 
+    /* background-color: var(--background-text-color); */
     border-color: var(--primary-project-color);
     transform: scale(1.05) !important;
 }
@@ -377,7 +378,7 @@ label {
 
 input,
 textarea {
-    background-color: var(--secondary-project-color);
+    background-color: var(--background-text-color);
     outline: 0.2px var(--primary-project-color) solid;
     border: none;
     color: white;
@@ -520,14 +521,16 @@ textarea[name="message"] {
     .my-text {
         position: absolute;
         display: inline-block;
-        top: -95px;
+        top: -85px;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 1.17rem;
+        text-align: center;
+        
     }
 
     .firstname {
-        top: -130px;
+        top: -140px;
         left: 50%;
     }
 
@@ -615,7 +618,7 @@ textarea[name="message"] {
 
     input,
     textarea {
-        background-color: var(--secondary-project-color);
+        background-color: #2d3135;
         outline: 1px var(--primary-project-color) solid;
         color: white;
         width: 98%;

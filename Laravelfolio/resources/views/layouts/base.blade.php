@@ -19,7 +19,7 @@
     <script defer  type="module" src="{{ URL::to('/js/threeAnimation.js') }}"></script>
     <script defer type="module" src="{{ URL::to('/js/webAnimation.js') }}"></script>
     <script defer type="module" src="{{ URL::to('/js/lightMode.js') }}"></script>
-    <script defer type="module" src="{{ URL::to('/js/rss.js') }}"></script>
+    <script defer type="module" src="{{ URL::to('/js/message.js') }}"></script>
     <!-- counterAPI library, insert anywhere on the page. -->
     <script defer src="https://counterapi.com/c.js" async ></script>
     <title>@yield('titre')</title>
