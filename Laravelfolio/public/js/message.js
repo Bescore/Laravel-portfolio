@@ -18,12 +18,6 @@ const message = {
         // creer un formData
         const formData = new FormData( message.form )
 
-        // ajouter du son
-        
-        
-        
-        
-        
         // on check les données
         if ( message.checkEntries( formData.get( 'nom' ), formData.get( 'email' ), formData.get( 'message' ) ) ) {
             
