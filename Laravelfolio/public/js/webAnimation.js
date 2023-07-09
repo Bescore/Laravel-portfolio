@@ -14,7 +14,7 @@ const animations = {
         // creer la boucle qui rajoute la class opacityOff sur tous les element de la page
         for ( const bodychild of animations.bodychilds ) {
 
-            if (!bodychild.classList.contains("curtain")) {
+            if (!bodychild.classList.contains("curtain") || !bodychild.classList.contains("visitorsNb") ) {
                 bodychild.classList.add( 'opacityOff' )
             }
             

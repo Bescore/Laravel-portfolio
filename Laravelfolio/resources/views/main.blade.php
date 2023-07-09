@@ -33,7 +33,7 @@
                     <p class="m-2"><span class="infos">Niveau d'études</span> : Bac +3</p>
                     <p class="m-2"><span class="infos">Âge :</span> 32 ans</p>
                     <p class="m-2 "><span class="infos">Langues :</span> Anglais intermédiaire</p>
-                    <p class="m-2"><span class="infos">Soft skills :</span> Travail d'équipe, curieux, rigoureux</p>
+                    <p class="m-2"><span class="infos">Soft skills :</span> Travail d'équipe, curieux, débrouillard</p>
                     <p><a class="cv-link px-2" href="{{ URL::to('/img/JeanMarie_Lator.pdf') }}" download>CV</a></p>
                     <i class=" px-2 fa-solid fa-hand-pointer fa-bounce"></i>
                 </div>
@@ -43,15 +43,15 @@
             <p class="p-5">Je suis un développeur web passionné avec une appétence pour le  back-end, prêt à relever tous les défis pour créer des expériences numériques performantes et robustes.</p>
             <h2>Compétences</h2>
             <div class="dev-skills-container">
-                <i class="fa-brands fa-php fa-3x" style="color:purple" title="PHP" ></i>
-                <i class="fa-brands fa-java fa-3x" style="color:orange" title="Java"> </i>
-                <i class="fa-brands fa-js fa-3x" style="color:yellow" title="Javascript"></i>
-                <i class="fa-brands fa-symfony fa-3x" style="color:black" title="symfony"></i>
-                <i class="fa-brands fa-laravel fa-3x" style="color:red" title="Laravel"></i>
-                <i class="fa-brands fa-html5 fa-3x" style="color:orange" title="html"></i>
-                <i class="fa-brands fa-css3-alt fa-3x" style="color:rgb(26, 23, 199)" title="css"></i>
-                <i class="fa-brands fa-vuejs fa-3x" style="color:green" title="vue.js"></i>
-                <i class="fa-brands fa-wordpress fa-3x" title="wordpress"></i>
+                <a href="https://www.php.net/manual/fr/intro-whatis.php" target="_blank"><i class="fa-brands fa-php fa-3x"   style="color:purple" title="PHP" ></i></a>
+                <a href="https://www.java.com/fr/" target="_blank"><i class="fa-brands fa-java fa-3x" style="color:orange" title="Java"> </i></a>
+                <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" target="_blank"><i class="fa-brands fa-js fa-3x" style="color:yellow" title="Javascript"></i></a>
+                <a href="https://symfony.com" target="_blank"><i class="fa-brands fa-symfony fa-3x" style="color:black" title="symfony"></i></a>
+                <a href="https://laravel.com" target="_blank"><i class="fa-brands fa-laravel fa-3x" style="color:red" title="Laravel"></i></a>
+                <a href="https://developer.mozilla.org/fr/docs/Web/HTML" target="_blank"><i class="fa-brands fa-html5 fa-3x" style="color:orange" title="html"></i></a>
+                <a href="https://developer.mozilla.org/fr/docs/Web/CSS" target="_blank"><i class="fa-brands fa-css3-alt fa-3x" style="color:rgb(26, 23, 199)" title="css"></i></a>
+                <a href="https://vuejs.org" target="_blank"><i class="fa-brands fa-vuejs fa-3x" style="color:green" title="vue.js"></i></a>
+                <a href="https://wordpress.org" target="_blank"><i class="fa-brands fa-wordpress fa-3x" title="wordpress"></i></a>
             </div>
         </div>
         

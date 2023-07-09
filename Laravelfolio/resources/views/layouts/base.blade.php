@@ -72,7 +72,7 @@
           <!-- Linkedin -->
           <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/in/jean-marie-lator"
 
-           role="button"
+          role="button"
             ><i class="fab fa-linkedin-in"></i
           ></a>
     
@@ -84,10 +84,10 @@
         <!-- Section: Social media -->
         <section class="mb-4">
           <p>
-             “ Pour être à jour il faut se mettre à l'apache ”
+            “ Pour être à jour il faut se mettre à l'apache ”
           </p>
           <!-- Add the counter instance somewhere to your template... -->
-        <div class="counterapi my-2" label="Visiteurs" style="min-height:44px" nolink=true bg="transparent" iconColor="#e7a631" ></div>
+        <div class="counterapi my-2 visitorsNb" label="Visiteurs" style="min-height:44px" nolink=true bg="transparent" iconColor="#e7a631" ></div>
         </section>
         <!-- Section: Text -->
     

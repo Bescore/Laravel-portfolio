@@ -300,8 +300,9 @@
     border-radius: 20px;
 }
 
-.dev-skills-container i {
+.dev-skills-container a {
     flex: 1 0 20%;
+    text-decoration: none;
 }
 
 .section-3 {
