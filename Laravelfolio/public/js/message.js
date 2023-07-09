@@ -28,7 +28,6 @@ const message = {
         if ( message.checkEntries( formData.get( 'nom' ), formData.get( 'email' ), formData.get( 'message' ) ) ) {
             
         
-
             // on lance l'appel ajax avec des données dynamiques
             const response = await fetch( window.location.protocol + "//" + window.location.host + "/api/message", {
                 method: 'POST',
