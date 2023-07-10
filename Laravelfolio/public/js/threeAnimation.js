@@ -5,11 +5,11 @@ import { GLTFLoader } from 'https://cdn.jsdelivr.net/npm/three@0.121.1/examples/
 
 const tapHereBtn = document.querySelector( '.curtain' );
 
-tapHereBtn.addEventListener('click',handleTapeHereClick)
+tapHereBtn.addEventListener( 'click', handleTapeHereClick )
 
-function handleTapeHereClick() {
+function handleTapeHereClick () {
   tapHereBtn.classList.add( 'opacityOff' );
-  tapHereBtn.style.display="none"
+  tapHereBtn.style.display = "none"
 }
 
 //ciblage des divs nécessaires
@@ -24,7 +24,7 @@ var camera = new THREE.PerspectiveCamera(
   0.1,
   1000
 );
-var renderer = new THREE.WebGLRenderer();
+var renderer = new THREE.WebGLRenderer({ antialias: true });
 renderer.setSize( myCanvas.offsetWidth, myCanvas.offsetHeight );
 //envoyer le rendu dans la div html
 myCanvas.appendChild( renderer.domElement );
@@ -45,7 +45,7 @@ const loader = new GLTFLoader();
 //ajout de lumière (4 possible ambient lumiere globale, spotlight, point light, directionalLight revoir la doc)
 const light = new THREE.AmbientLight( 0xffffff, 3 )
 //const light = new THREE.SpotLight( 0xffffff, 4 )
-light.position.set( 0, 1, 0)
+light.position.set( 0, 1, 0 )
 camera.position.set( 1, 1, 1 )
 
 //ajout da la lumière a la scene
@@ -55,7 +55,7 @@ const objetImported = await loader.loadAsync( '/models/pc.glb' );
 scene.add( objetImported.scene );
 
 //bg color // en paramettre ->recuperer le couleur de l'encart en haut à gauche de l'ecran
-scene.background = new THREE.Color( getComputedStyle(document.querySelector('.little-square')).backgroundColor );
+scene.background = new THREE.Color( getComputedStyle( document.querySelector( '.little-square' ) ).backgroundColor );
 
 // Création d'un cube
 //var geometry = new THREE.BoxGeometry( 1, 1, 1 );
@@ -77,7 +77,7 @@ const clips = objetImported.animations;
 //onsole.log( clips );
 
 // Sélectionnez l'animation que vous souhaitez jouer (par exemple, la première animation)
-const action = mixer.clipAction( clips[ 0] );
+const action = mixer.clipAction( clips[ 0 ] );
 
 // Démarrer l'animation
 action.play();
@@ -91,20 +91,20 @@ function animate () {
   //objetImported.scene.children[0].rotation.y += 0.0011;
   objetImported.scene.rotation.y -= 0.0010;
   // Mettre à jour le mélangeur à chaque frame
-  const delta = 0.0045; // Temps écoulé depuis la dernière frame
+  const delta = 0.0065; // Temps écoulé depuis la dernière frame
   mixer.update( delta );
 
   //si on maintien le click l'animation s'arrete
-  myCanvasContainer.addEventListener( "mousedown",function() {
-  if ( action.isRunning() ) {
-    action.paused=true
-  } 
+  myCanvasContainer.addEventListener( "pointerdown", function () {
+    if ( action.isRunning() ) {
+      action.paused = true
+    }
   } );
-  
+
   //si on relache le click l'annimation s'arrête
-  myCanvasContainer.addEventListener( "mouseup",function() {
-    if(!action.isRunning()) {
-      action.paused=false
+  myCanvasContainer.addEventListener( "pointerup", function () {
+    if ( !action.isRunning() ) {
+      action.paused = false
     }
   } );
 

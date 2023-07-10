@@ -9,16 +9,19 @@ const animations = {
 
             // mettre le hr en scale 0 , voir la class css
             hr.classList.add( 'transformScaleOff' )
-        
+
         }
         // creer la boucle qui rajoute la class opacityOff sur tous les element de la page
         for ( const bodychild of animations.bodychilds ) {
 
-            if (!bodychild.classList.contains("curtain") || !bodychild.classList.contains("visitorsNb") ) {
+            if ( !bodychild.classList.contains( "curtain" ) ) {
                 bodychild.classList.add( 'opacityOff' )
             }
-            
 
+
+            if ( !bodychild.classList.contains( "visitorsNb" ) ) {
+                bodychild.classList.remove( 'opacityOff' )
+            }
         }
 
     },
@@ -37,7 +40,7 @@ const animations = {
 
         }
     },
-    
+
 }
 
 document.addEventListener( "DOMContentLoaded", animations.init )
@@ -47,7 +50,7 @@ document.addEventListener( "DOMContentLoaded", animations.init )
 const observer = new IntersectionObserver( ( entries ) => {
 
     for ( const entry of entries ) {
-        if ( entry.isIntersecting && !entry.target.classList.contains( 'curtain' )) {
+        if ( entry.isIntersecting && !entry.target.classList.contains( 'curtain' ) ) {
             entry.target.classList.add( 'opacityOn' )
         } else {
             entry.target.classList.remove( 'opacityOn' )
@@ -65,7 +68,7 @@ const observer = new IntersectionObserver( ( entries ) => {
             entry.target.classList.remove( 'myAnim' )
         }
     }
-});
+} );
 
 
 // boucle qui oberserve chaque élément de la page
@@ -73,5 +76,5 @@ for ( const element of animations.bodychilds ) {
 
     //oberser tout le monde
     observer.observe( element );
-    
+
 }
