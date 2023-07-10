@@ -43,7 +43,7 @@
     .my-text {
         position: absolute;
         display: inline-block;
-        top: -85px;
+        top: -55px;
         left: 50%;
         transform: translate(-50%, -50%);
         font-size: 1.17rem;
@@ -51,7 +51,7 @@
     }
 
     .firstname {
-        top: -140px;
+        top: -110px;
         left: 50%;
     }
 
