@@ -69,6 +69,9 @@
         </a>
         @endforeach
     </div>
+    <div class="d-flex justify-content-center align-items-center">
+        {{$projects->links('vendor.pagination.semantic-ui')}}
+    <div>
 </section>
 <br><br>
 <hr class="hr px-5">
