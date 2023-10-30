@@ -24,17 +24,18 @@
     <div class="row">
         <div class="col col-xl-6 section-2-left-side">
             <div class="rounded-jm">
-                <img loading="lazy" src="{{ URL::to('/img/jm.png') }}" alt="jean-marie">
+                <img id="jean_marie" loading="lazy" src="{{ mix('/img/jm.png') }}" alt="jean-marie">
             </div>
             
             <div class=>
                 <div class="">
-                    <p class="mx-2"><span class="infos">Pourquoi ???</span> passion + travail = développeur web</p>
+                    <p class="mx-2"><span class="infos">Motivations : </span>La passion et l'envie de progresser</p>
                     <p class="m-2"><span class="infos">Niveau d'études</span> : Bac +3</p>
                     <p class="m-2"><span class="infos">Âge :</span> 32 ans</p>
                     <p class="m-2 "><span class="infos">Langues :</span> Anglais intermédiaire</p>
                     <p class="m-2"><span class="infos">Soft skills :</span> Travail d'équipe, curieux, débrouillard</p>
-                    <p><a class="cv-link px-2" href="{{ URL::to('/img/JeanMarie_Lator.pdf') }}" download>CV</a></p>
+                    <p class="m-2"><span class="infos">Statut :</span> Actuellement en stage</p>
+                    <p><a class="cv-link px-2" href="{{ asset('img/JeanMarie_Lator.pdf') }}" download>CV</a></p>
                     <i class=" px-2 fa-solid fa-hand-pointer fa-bounce"></i>
                 </div>
             </div>
@@ -78,7 +79,7 @@
 <section class=" section section-3 section-4" id="contact">
     <div class="mask"></div>
     <h2 class="background-title contact-title">Contact</h2>
-    <div class="contact-container">
+    <div class="contact-container" id="contact-container">
         <form id="form" method="POST" class="">
             <label for="nom">Nom</label><br>
             <input type="text" id="nom"  name="nom" ><br>

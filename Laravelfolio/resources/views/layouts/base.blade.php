@@ -7,8 +7,8 @@
     {{-- font-awesome --}}
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     {{-- css --}}
-    <link rel="stylesheet" href="{{ URL::to('/css/app.css') }}">
-    <link rel="stylesheet" media=" (max-width: 640px)" href="{{ URL::to('/css/smallscreen.css') }}">
+    <link rel="stylesheet" href="{{ asset('/css/app.css') }}">
+    <link rel="stylesheet" media=" (max-width: 640px)" href="{{ asset('/css/smallscreen.css') }}">
     {{-- bootstrap --}}
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
@@ -17,11 +17,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@500&display=swap" rel="stylesheet">
     {{-- js --}}
-    <script defer type="module" src="{{ URL::to('/js/onScroll.js') }}"></script>
-    <script defer  type="module" src="{{ URL::to('/js/threeAnimation.js') }}"></script>
-    <script defer type="module" src="{{ URL::to('/js/webAnimation.js') }}"></script>
-    <script defer type="module" src="{{ URL::to('/js/lightMode.js') }}"></script>
-    <script defer type="module" src="{{ URL::to('/js/message.js') }}"></script>
+    <script defer type="module" src="{{ asset('js/onScroll.js') }}"></script>
+    <script defer  type="module" src="{{ asset('js/threeAnimation.js') }}"></script>
+    <script defer type="module" src="{{ asset('js/webAnimation.js') }}"></script>
+    <script defer type="module" src="{{ asset('js/lightMode.js') }}"></script>
+    <script defer type="module" src="{{ asset('js/message.js') }}"></script>
     <!-- counterAPI library, insert anywhere on the page. -->
     <script defer src="https://counterapi.com/c.js" async ></script>
     <title>@yield('titre')</title>
@@ -31,7 +31,7 @@
         <nav class="navbar navbar-expand-lg nav-background">
             <div class="little-square"></div>
             <div class="container-fluid nav-item">
-            <span class="navbar-brand mx-5 link-light px-2" id="light-mode" >Bescore <i class="fa-regular fa-moon"></i></span>
+            <span class="navbar-brand mx-5 link-light px-2 border border-2 rounded-2" id="light-mode" >Bescore <i class="fa-regular fa-moon"></i></span>
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon text-light"></span>
             </button>

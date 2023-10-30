@@ -1,76 +1,63 @@
-import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.117.1/build/three.module.js';
+/******/ (() => { // webpackBootstrap
+var __webpack_exports__ = {};
+/*!***********************************!*\
+  !*** ./resources/js/lightMode.js ***!
+  \***********************************/
 // change theme
 
-const theme = {
-    changeThemeBtn: document.querySelector( '#light-mode' ),
-    
-    init: function () {
-        // préférence dark/lightmode
-        //localStorage.setItem( "lightMode", "0" )
-        theme.checkTheme()
-        
-        theme.changeThemeBtn.addEventListener( 'click', theme.handleChangeTheme );
-
-    },
-
-    handleChangeTheme: function () {
-
-        if ( localStorage.getItem( "lightMode" ) === "0" || !localStorage.getItem( "lightMode" ) ) {
-            
-            theme.purpleMode()
-
-            
-
-            localStorage.setItem( "lightMode","1" )
-        } else {
-            
-            theme.yellowMode()
-
-            localStorage.setItem( "lightMode","0" )
-        } 
-    },
-    
-    checkTheme: function () {
-        
-        if ( localStorage.getItem( "lightMode" ) == "1" ) {
-            theme.purpleMode()
-        } else {
-            theme.yellowMode()
-
-        }
-    },
-
-    yellowMode: function () {
-        theme.setOfColor( '--primary-project-color', '#e7a631' );
-        theme.setOfColor( '--secondary-project-color', '#1d2125' );
-        theme.setOfColor( '--tertiary-project-color', '#ffffff' );
-        theme.setOfColor( '--background-text-color', '#2d3135' );
-
-        document.querySelector( '.body' ).style.color = "#ffffff"
-    },
-
-    purpleMode: function () {
-        theme.setOfColor( '--secondary-project-color', '#33373c' );
-        theme.setOfColor( '--tertiary-project-color', '#1d2125' );
-        theme.setOfColor( '--primary-project-color', '#815E91' );
-        theme.setOfColor( '--background-text-color', '#ffffff' );
-
-        document.querySelector( '.body' ).style.color = "#ffffff";
-
-        if ( window.location.pathname.split( '/' )[ 1 ] == "home" || window.location.pathname.split( '/' )[ 1 ] == "#home" ) {
-            
-            document.querySelector( '#nom' ).style.backgroundColor = "#2d3135";
-            document.querySelector( '#email' ).style.backgroundColor = "#2d3135";
-            document.querySelector( '#message' ).style.backgroundColor = "#2d3135";
-            
-        }
-        
-    },
-
-    setOfColor: function ( nameofcolor, thecolor ) {
-        
-        document.documentElement.style.setProperty(nameofcolor, thecolor);
+var theme = {
+  changeThemeBtn: document.querySelector('#light-mode'),
+  jmPhoto: document.querySelector('#jean_marie'),
+  init: function init() {
+    // préférence dark/lightmode
+    //localStorage.setItem( "lightMode", "0" )
+    theme.checkTheme();
+    theme.changeThemeBtn.addEventListener('click', theme.handleChangeTheme);
+  },
+  handleChangeTheme: function handleChangeTheme() {
+    if (localStorage.getItem("lightMode") === "0" || !localStorage.getItem("lightMode")) {
+      theme.purpleMode();
+      localStorage.setItem("lightMode", "1");
+    } else {
+      theme.yellowMode();
+      localStorage.setItem("lightMode", "0");
     }
-}
-
-document.addEventListener("DOMContentLoaded",theme.init)
+  },
+  checkTheme: function checkTheme() {
+    if (localStorage.getItem("lightMode") == "1") {
+      theme.purpleMode();
+    } else {
+      theme.yellowMode();
+    }
+  },
+  yellowMode: function yellowMode() {
+    theme.setOfColor('--primary-project-color', '#e7a631');
+    theme.setOfColor('--secondary-project-color', '#1d2125');
+    theme.setOfColor('--tertiary-project-color', '#ffffff');
+    theme.setOfColor('--background-text-color', '#424549');
+    document.querySelector('.body').style.color = "#ffffff";
+    theme.jmPhoto.src = "/img/jm.png";
+  },
+  purpleMode: function purpleMode() {
+    theme.setOfColor('--secondary-project-color', '#302d4f');
+    theme.setOfColor('--tertiary-project-color', '#1d2125');
+    theme.setOfColor('--primary-project-color', '#c4f1be');
+    theme.setOfColor('--background-text-color', '#ffffff');
+    document.querySelector('.body').style.color = "#ffffff";
+    document.querySelector('#nom').style.backgroundColor = "#2D3135";
+    document.querySelector('#message').style.backgroundColor = "#2D3135";
+    document.querySelector('#email').style.backgroundColor = "#2D3135";
+    if (window.location.pathname.split('/')[1] == "home" || window.location.pathname.split('/')[1] == "#home") {
+      document.querySelector('#nom').style.backgroundColor = "#2d3135";
+      document.querySelector('#email').style.backgroundColor = "#2d3135";
+      document.querySelector('#message').style.backgroundColor = "#2d3135";
+    }
+    theme.jmPhoto.src = "/img/JM_linkedin.jpg";
+  },
+  setOfColor: function setOfColor(nameofcolor, thecolor) {
+    document.documentElement.style.setProperty(nameofcolor, thecolor);
+  }
+};
+document.addEventListener("DOMContentLoaded", theme.init);
+/******/ })()
+;

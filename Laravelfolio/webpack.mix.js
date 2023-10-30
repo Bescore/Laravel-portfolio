@@ -1,5 +1,11 @@
-const mix = require('laravel-mix');
+const mix = require( 'laravel-mix' );
 
+
+mix.webpackConfig( {
+    stats: {
+        children: true,
+    },
+} );
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -11,7 +17,14 @@ const mix = require('laravel-mix');
  |
  */
 
-mix.js('resources/js/app.js', 'public/js')
-    .postCss('resources/css/app.css', 'public/css', [
-        //
-    ]);
+mix.js( 'resources/js/app.js', 'public/js' )
+    .copy( 'resources/img', 'public/img' )
+    // .postCss( ['resources/css/app.css','resources/css/smallscreen.css'],'public/css', [
+    //     //
+    // ] );
+mix.js( 'resources/js/message.js', 'public/js' );
+mix.js( 'resources/js/webAnimation.js', 'public/js' );
+mix.js( 'resources/js/onScroll.js', 'public/js' );
+mix.js( 'resources/js/lightMode.js', 'public/js' );
+mix.styles(['resources/css/app.css', 'resources/css/smallscreen.css'], 'public/css/app.css');
+    

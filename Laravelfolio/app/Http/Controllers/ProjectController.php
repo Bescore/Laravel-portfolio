@@ -24,12 +24,13 @@ class ProjectController extends Controller
 
         //nombre aleatoire
         $randomNumber=rand(0,count($rss));
-
+        if (isset(($rss[$randomNumber]->pubDate))){
         $timestamp=strtotime($rss[$randomNumber]->pubDate);
-        
         // formater la date ' l'heure
         $localDateTime = date('d - m - Y  à  H : i : s', $timestamp);
-
+        }else{
+            $localDateTime = null;
+        }
         return view('projects', ['rss'=>$rss, 'date'=>$localDateTime, 'randomNumber'=>$randomNumber,'project'=>$project]);
     }
 }
