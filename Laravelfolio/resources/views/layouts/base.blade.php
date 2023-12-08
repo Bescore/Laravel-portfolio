@@ -31,7 +31,14 @@
         <nav class="navbar navbar-expand-lg nav-background">
             <div class="little-square"></div>
             <div class="container-fluid nav-item">
-            <span class="navbar-brand mx-5 link-light px-2 border border-2 rounded-2" id="light-mode" >Bescore <i class="fa-regular fa-moon"></i></span>
+              {{-- <span class="navbar-brand mx-5 link-light px-2 border border-2 rounded-2" id="light-mode" >Bescore <i class="fa-regular fa-moon"></i></span> --}}
+            @if(Route::currentRouteName() == 'main')
+              <div class="navbar-brand mx-5 link-light px-2" >
+                  <div class="form-check form-switch">
+                    <input id="light-mode" class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault"> <img src="{{ asset('img/sun.svg') }}" alt="sdsdsdsd">
+                  </div>
+                </div>
+            @endif
             <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon text-light"></span>
             </button>

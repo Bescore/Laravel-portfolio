@@ -26,7 +26,7 @@
             <p class="py-2 text-center">Technologies et outils utilisées</p>
             <div class="row">
                 @foreach ($project->technologies as $item)
-                <div style="background-color: #{{$item->couleur}};" class="text-center col rounded-2 p-2 m-3 tag">{{$item->titre}}</div>
+                <div style="border: solid #{{$item->couleur}};" class="text-center col rounded-2 p-2 m-3 tag">{{$item->titre}}</div>
                 @endforeach
                 
             </div>
