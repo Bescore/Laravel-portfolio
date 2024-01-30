@@ -14,7 +14,9 @@
             @else
             <p>👇</p>
             @endif
-            <a class="my-4" href="{{$project->github}}" target="_blank"> <i class="fa-brands fa-square-github"></i> Le projet sur Github ici</a>
+            @if (!empty($project->github))
+                <a class="my-4" href="{{$project->github}}" target="_blank"> <i class="fa-brands fa-square-github"></i> Le projet sur Github ici</a>
+            @endif
         </div>
         <div class="col-12 col-xl-6">  
             @if (empty($project->lien_video))

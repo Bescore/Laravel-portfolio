@@ -82,11 +82,11 @@
     <div class="contact-container" id="contact-container">
         <form id="form" method="POST" class="">
             <label for="nom">Nom</label><br>
-            <input type="text" id="nom"  name="nom" ><br>
+            <input class="rounded" type="text" id="nom"  name="nom" ><br>
             <label for="email">Email</label><br>
-            <input type="text" id="email" name="email" ><br>
+            <input class="rounded" type="text" id="email" name="email" ><br>
             <label for="message">Message</label><br>
-            <textarea name="message" id="message" cols="20" rows="10"></textarea><br><br>
+            <textarea class="rounded" name="message" id="message" cols="20" rows="10"></textarea><br><br>
             <button class="btn btn-light">Envoyer</button>
         </form>
     </div>

@@ -367,7 +367,7 @@ figure img {
         var(--secondary-project-color),
         var(--background-text-color)
     );
-    background: url("../img/teddy.jpg") no-repeat right;
+    background: url("../img/websol.jpg") no-repeat right;
     background-size: contain;
 }
 
